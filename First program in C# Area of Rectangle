@@ -1,0 +1,40 @@
+using System;
+
+namespace RectangleApplication
+{
+class Rectangle
+{
+double length;
+double width;
+
+public void details()
+{
+length = 4.4;
+width  = 5.6;
+}
+public double area()
+{
+return length * width;
+}
+
+public void display()
+{
+Console.WriteLine("Length : {0}" , length);
+Console.WriteLine("Width : {0}" ,width);
+Console.WriteLine("Area : {0}" , area());
+}
+}
+class Execution
+{
+public static void Main(string[] args)
+{
+    Rectangle re = new Rectangle();
+    re.details();
+    re.display();
+    Console.ReadLine();
+}
+}
+}
+
+
+
